@@ -1,12 +1,18 @@
 <template>
-  <div class="mapbox">
-<MglMap :accessToken="accessToken" :mapStyle="mapStyle" />
+   <div id="map-wrap">
+    <MglMap
+      :accessToken="accessToken"
+      :mapStyle="mapStyle"
+      :center.sync="center"
+      :zoom.sync="zoom"
+    >
+    </MglMap>
   </div>
 </template>
 
 <script>
 
-import Mapbox from "mapbox-gl";
+
 import { MglMap } from "vue-mapbox";
 
 export default {
@@ -18,17 +24,37 @@ export default {
       accessToken: "pk.eyJ1IjoiZXNjb2JhcmNhbml6YWxlc2UiLCJhIjoiY2s5YmJlcTR5MjF0bzNsbGNhM2g4YWRpbCJ9.NwN0TpQhxdheMDEG36hQbQ",
       mapStyle: "mapbox://styles/escobarcanizalese/ck9b36lie2fko1iplg4zevn17" // your map style
     };
-  },
-
-  created() {
-    // We need to set mapbox-gl library here in order to use it in template
-    this.mapbox = Mapbox;
   }
-
 
 };
 </script>
 
-<style scoped>
+<style lang="css">
+body {
+  margin: 0;
+  padding: 0;
+}
+#map-wrap {
 
+  height: 50%;
+  top: 0;
+  left: 0;
+  width: 99%;
+}
+
+#map-wrap .mgl-map-wrapper {
+
+  height: 50%;
+  top: 0;
+  left: 0;      
+  width: 100%;
+}
+
+#map-wrap .mgl-map-wrapper .mapboxgl-map {
+  height: 50%;
+  left: 0;
+  overflow: visible;
+  top: 0;  /* mapa */
+  width: 100%;
+}
 </style>
