@@ -13,26 +13,27 @@
       color="indigo"
       app
     >
-         <v-btn
+         <v-btn class="flotante"
                 absolute
                 dark
                 fab
-                top
+                top 
+                large
                 right
                 color="pink"
-                :style="{left: '50%', transform:'translateX(-50%)'}"
-              >
-                <v-icon></v-icon>
-              </v-btn>
+                :style="{left: '50%',transform:'translateX(-50%)', width: '75px',height: '75px'}" > 
+          </v-btn>
       <span class="white--text">&copy; 2020</span>
     </v-footer>
   </v-app>
+
 </template>
 
 <script>
 
 import mapa from "../components/map"
 import casa from "../components/menu"
+
   export default {
      components:{
       mapa, casa 
@@ -55,6 +56,13 @@ import casa from "../components/menu"
   }
 </script>
 
-<style lang="sass" scoped>
+<style >
+.flotante{
 
+    position: absolute;
+    margin: -1rem 0 0 0;
+    background-image: url("../imagenes/svg/Grupo16.svg");
+    background-size: 3.5rem;
+    background-position: center;
+}
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <v-appp id="">
+  <div id="">
       <v-navigation-drawer
       v-model="drawer"
       app
@@ -7,7 +7,7 @@
       <v-list dense>
         <v-list-item link>
           <v-list-item-action>
-            <v-icon>mdi-home</v-icon>
+            <v-icon>fas fa-home</v-icon>
           </v-list-item-action>
           <v-list-item-content>
             <v-list-item-title>Home</v-list-item-title>
@@ -43,7 +43,7 @@
                
               ></v-switch>
     </v-app-bar>
-    </v-appp>
+    </div>
 </template>
 
 <script>
