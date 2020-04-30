@@ -9,10 +9,7 @@
     </v-content>
 
 
-    <v-footer
-      color="indigo"
-      app
-    >
+    <v-footer color="indigo" class="footer" app>
          <v-btn class="flotante"
                 absolute
                 dark
@@ -23,7 +20,8 @@
                 color="pink"
                 :style="{left: '50%',transform:'translateX(-50%)', width: '75px',height: '75px'}" > 
           </v-btn>
-      <span class="white--text">&copy; 2020</span>
+      <span class=""></span>
+     
     </v-footer>
   </v-app>
 
@@ -60,9 +58,13 @@ import casa from "../components/menu"
 .flotante{
 
     position: absolute;
-    margin: -1rem 0 0 0;
+    margin: -3rem 0 0 0;
     background-image: url("../imagenes/svg/Grupo16.svg");
     background-size: 3.5rem;
     background-position: center;
+}
+.footer{
+
+  border-radius: 20px;
 }
 </style>

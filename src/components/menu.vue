@@ -4,22 +4,31 @@
       v-model="drawer"
       app
     >
+
+     <v-avatar class="avatar-person" size="120">
+      <img
+        src="https://cdn.vuetifyjs.com/images/john.jpg"
+        alt="John"
+      >
+    </v-avatar>
       <v-list dense>
         <v-list-item link>
-          <v-list-item-action>
-            <v-icon>fas fa-home</v-icon>
-          </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title>Home</v-list-item-title>
-          </v-list-item-content>
+          <v-list-item-action><v-icon>fas fa-home</v-icon></v-list-item-action>
+          <v-list-item-content><v-list-item-title>Home</v-list-item-title></v-list-item-content>
         </v-list-item>
-        <v-list-item link>
-          <v-list-item-action>
-            <v-icon>mdi-contact-mail</v-icon>
-          </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title>Contact</v-list-item-title>
-          </v-list-item-content>
+        
+        <v-list-item link> 
+          <v-list-item-action><v-icon>far fa-user</v-icon></v-list-item-action>
+          <v-list-item-content> <v-list-item-title>Perfil</v-list-item-title></v-list-item-content>
+        </v-list-item>
+
+         <v-list-item link> 
+          <v-list-item-action><v-icon>fas fa-car</v-icon></v-list-item-action>
+          <v-list-item-content> <v-list-item-title>Registrar Vehiculos</v-list-item-title></v-list-item-content>
+        </v-list-item>
+          <v-list-item link> 
+          <v-list-item-action><v-icon>fas fa-sign-out-alt</v-icon></v-list-item-action>
+          <v-list-item-content> <v-list-item-title>Cerrar Sesión</v-list-item-title></v-list-item-content>
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
@@ -69,5 +78,8 @@
 </script>
 
 <style>
-
+.avatar-person{
+  margin: 40px 0 40px 0 ;
+  border: solid 2px #4AA5FA;
+}
 </style>
