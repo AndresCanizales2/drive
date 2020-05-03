@@ -28,7 +28,7 @@ export default {
 };
 </script>
 
-<style lang="css">
+<style>
 body {
   margin: 0;
   padding: 0;
