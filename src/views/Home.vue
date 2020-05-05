@@ -1,6 +1,6 @@
 <template>
   <v-app class="contenedortodo">
-    <v-container class="pt-12">
+    <v-container class="pt-11">
       <v-content>
         <img
           class="imagen"
@@ -9,7 +9,7 @@
         />
       </v-content>
       <v-content>
-        <div id="driver">Driver</div>
+        <div class="pt-2" id="driver">Driver</div>
       </v-content>
 
       <v-content>
@@ -23,9 +23,9 @@
       <v-row justify="center" align="center"></v-row>
 
       <v-row justify="center" align="center">
-        <v-col class="pa-12">
+        <v-col class="pt-12 pl-12 pr-12">
           <v-btn block to="/iniciosesion" color="blue" dark>Inicia sesion</v-btn>
-          <v-btn class="mt-2 mb-3" block dark color="green">Registrate</v-btn>
+          <v-btn class="mt-2 mb-3" to="/registro" block dark color="green">Registrate</v-btn>
           <p class="olvidaste">Olvidaste tu contraseña?</p>
         </v-col>
       </v-row>

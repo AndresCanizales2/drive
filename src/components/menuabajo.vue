@@ -17,15 +17,9 @@
             height: '75px'
           }"
           v-on="on"
-        >
-        </v-btn>
+        ></v-btn>
       </template>
-      <v-sheet class="text-center" height="200px">
-        <v-btn class="mt-6" flat color="error" @click="sheet = !sheet"
-          >close</v-btn
-        >
-        <div class="py-3">Trabajo</div>
-      </v-sheet>
+      <v-sheet class="text-center" height="200px"></v-sheet>
     </v-bottom-sheet>
   </div>
 </template>
