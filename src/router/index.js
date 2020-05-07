@@ -3,6 +3,7 @@ import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import iniciosesion from "../views/paginainicial.vue"
 import Registro from "../views/registrarse.vue"
+import codigo from "../views/codigo.vue"
 Vue.use(VueRouter);
 
 const routes = [
@@ -11,6 +12,7 @@ const routes = [
     name: "iniciosesion",
     component: iniciosesion
   },
+
   {
     path: "/",
     name: "Home",
@@ -30,7 +32,12 @@ const routes = [
     name: "Registro",
     component: Registro
 
-  }
+  },
+  {
+    path: "/codigo",
+    name: "codigo",
+    component: codigo
+  },
 ];
 
 const router = new VueRouter({

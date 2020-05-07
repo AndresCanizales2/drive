@@ -11,8 +11,11 @@
 
       <v-row justify="center" align="center">
         <v-form>
-          <span>Inicia sesion</span>
-          con tu numero de telefono
+          <p class="mt-3">
+            <span>Inicia sesión</span>
+            con tu numero de telefono
+          </p>
+
           <v-autocomplete
             v-model="friends"
             :items="people"
@@ -57,9 +60,20 @@
             <!-- a -->
           </v-autocomplete>
 
-          <v-text-field label="Ingresa tu Telefono" color="blue" type="number"></v-text-field>
-
-          <v-btn color="blue" class="mb-3" dark>Siguiente</v-btn>
+          <v-text-field
+            label="Ingresa tu Telefono"
+            color="blue"
+            type="number"
+            prepend-icon="fas fa-phone-alt"
+          ></v-text-field>
+          <v-text-field
+            label="ID"
+            color="blue"
+            type="number"
+            maxlength="10"
+            prepend-icon="far fa-id-card"
+          ></v-text-field>
+          <v-btn to="/codigo" color="blue" class="mb-3" dark>Siguiente</v-btn>
         </v-form>
       </v-row>
     </v-card>
@@ -92,5 +106,11 @@ export default {
 };
 </script>
 
-<style>
-</style>
+<style scoped>
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:700,800&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Gotu|Open+Sans&display=swap");
+
+* {
+  font-family: "Open Sans", sans-serif;
+}
+</style>> 
