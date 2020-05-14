@@ -70,8 +70,7 @@ export default {
 }
 
 #nicho {
-  font-family: "Gotu", sans-serif;
-  line-height: 1;
+    line-height: 1;
 }
 
 .imagen {

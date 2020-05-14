@@ -5,21 +5,15 @@
         <v-img
           class="imagen ma-auto"
           alt="Driver"
-          src="https://res.cloudinary.com/dtnqknltg/image/upload/v1588290597/Imagenesdeapp/Grupo_18_hxlmzd.svg"
+          src="https://res.cloudinary.com/dtnqknltg/image/upload/v1588892401/Imagenesdeapp/Grupo_18_n2uiqa.svg"
         />
       </v-content>
 
       <v-row justify="center" align="center">
         <v-form>
           <p class="mt-3">Ingresa el codigo enviado a tu celular :</p>
-
-          <v-text-field
-            label="Ingresa tu Telefono"
-            color="blue"
-            type="number"
-            prepend-icon="fas fa-phone-alt"
-          ></v-text-field>
-          <v-btn to="/" color="blue" class="mb-3" dark>Siguiente</v-btn>
+          <v-text-field label="Codigo" solo></v-text-field>
+          <v-btn to="/" color="pink" class="mb-3" dark>Siguiente</v-btn>
         </v-form>
       </v-row>
     </v-card>

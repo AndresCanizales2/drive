@@ -1,21 +1,18 @@
 <template>
   <div id="map-wrap">
-    <MglMap
-      :accessToken="accessToken"
-      :mapStyle="mapStyle"
-      :center.sync="center"
-      :zoom.sync="zoom"
-    >
+    <MglMap :accessToken="accessToken" :mapStyle="mapStyle" :center.sync="center" :zoom.sync="zoom">
+      <MglMarker :coordinates="coordinates" color="blue" />
     </MglMap>
   </div>
 </template>
 
 <script>
-import { MglMap } from "vue-mapbox";
+import { MglMap, MglMarker } from "vue-mapbox";
 
 export default {
   components: {
-    MglMap
+    MglMap,
+    MglMarker
   },
   data() {
     return {
@@ -38,7 +35,6 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-
 }
 
 #map-wrap .mgl-map-wrapper {
@@ -46,7 +42,6 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  
 }
 
 #map-wrap .mgl-map-wrapper .mapboxgl-map {
